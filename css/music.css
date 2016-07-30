@@ -1,0 +1,123 @@
+@keyframes Round {
+  0% {
+    transform: translateX(0px) translateY(0px) scale(0); }
+  20% {
+    transform: translateX(-3px) translateY(-6px) scale(0.1); }
+  40% {
+    transform: translateX(-6px) translateY(-12px) scale(0.2); }
+  60% {
+    transform: translateX(-9px) translateY(-18px) scale(0.3); }
+  80% {
+    transform: translateX(-12px) translateY(-24px) scale(0.4); }
+  100% {
+    transform: translateX(-15px) translateY(-30px) scale(0.5); } }
+@keyframes Cound {
+  0% {
+    transform: translateX(0px) translateY(0px) scale(0); }
+  20% {
+    transform: translateX(-3px) translateY(2px) scale(0.08); }
+  40% {
+    transform: translateX(-6px) translateY(4px) scale(0.16); }
+  60% {
+    transform: translateX(-9px) translateY(6px) scale(0.24); }
+  80% {
+    transform: translateX(-12px) translateY(8px) scale(0.32); }
+  100% {
+    transform: translateX(-15px) translateY(10px) scale(0.4); } }
+@keyframes Dound {
+  0% {
+    transform: translateX(0px) translateY(0px) scale(0); }
+  20% {
+    transform: translateX(3px) translateY(-3px) scale(0.09); }
+  40% {
+    transform: translateX(6px) translateY(-6px) scale(0.18); }
+  60% {
+    transform: translateX(9px) translateY(-9px) scale(0.27); }
+  80% {
+    transform: translateX(12px) translateY(-12px) scale(0.36); }
+  100% {
+    transform: translateX(15px) translateY(-15px) scale(0.45); } }
+@keyframes Eound {
+  0% {
+    transform: translateX(0px) translateY(0px) scale(0); }
+  20% {
+    transform: translateX(3px) translateY(4px) scale(0.04); }
+  40% {
+    transform: translateX(6px) translateY(8px) scale(0.08); }
+  60% {
+    transform: translateX(9px) translateY(12px) scale(0.12); }
+  80% {
+    transform: translateX(12px) translateY(16px) scale(0.16); }
+  100% {
+    transform: translateX(15px) translateY(20px) scale(0.2); } }
+@keyframes Bround {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(72deg); }
+  40% {
+    transform: rotate(144deg); }
+  60% {
+    transform: rotate(216deg); }
+  80% {
+    transform: rotate(288deg); }
+  100% {
+    transform: rotate(360deg); } }
+body {
+  background: #333; }
+
+.music-container {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  top: 1%;
+  right: 1%; }
+  .music-container #main {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background: url(../images/music_off.png) no-repeat 0 0;
+    background-size: cover; }
+  .music-container .little1 {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    z-index: 10; }
+  .music-container .little2 {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    z-index: 10; }
+  .music-container .little3 {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    z-index: 10; }
+  .music-container div span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/musict.png) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/*# sourceMappingURL=music.css.map */

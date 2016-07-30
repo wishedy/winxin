@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*样式重置*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+.clearboth {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+/*页面字体响应*/
+html {
+  font-size: 62.5%;
+  /* 10÷16=62.5% */ }
+
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94% !important;
+    /* 15.04÷16=94% */ } }
+@media only screen and (min-width: 561px) {
+  html {
+    font-size: 109% !important;
+    /* 17.44÷16=109% */ } }
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 125% !important;
+    /* 20÷16=125% */ } }
+@font-face {
+  font-family: 'iconfont';
+  src: url("../secondfont/iconfont.eot");
+  /* IE9*/
+  src: url("../secondfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../secondfont/iconfont.woff") format("woff"), url("../secondfont/iconfont.ttf") format("truetype"), url("../secondfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+@keyframes Round {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+@keyframes music {
+  /*$n: 5;
+  $x: 17.5%;
+  $y: (100% - $n * $x) / ($n - 1);*/
+  0% {
+    transform: translateX(0rem) translateY(0rem);
+    font-size: 0rem;
+    opacity: 100; }
+  5% {
+    transform: translateX(-2rem) translateY(2rem);
+    font-size: 0.1rem;
+    opacity: 95; }
+  10% {
+    transform: translateX(-4rem) translateY(4rem);
+    font-size: 0.2rem;
+    opacity: 90; }
+  15% {
+    transform: translateX(-6rem) translateY(6rem);
+    font-size: 0.3rem;
+    opacity: 85; }
+  20% {
+    transform: translateX(-8rem) translateY(8rem);
+    font-size: 0.4rem;
+    opacity: 80; }
+  25% {
+    transform: translateX(-10rem) translateY(10rem);
+    font-size: 0.5rem;
+    opacity: 75; }
+  30% {
+    transform: translateX(-12rem) translateY(12rem);
+    font-size: 0.6rem;
+    opacity: 70; }
+  35% {
+    transform: translateX(-14rem) translateY(14rem);
+    font-size: 0.7rem;
+    opacity: 65; }
+  40% {
+    transform: translateX(-16rem) translateY(16rem);
+    font-size: 0.8rem;
+    opacity: 60; }
+  45% {
+    transform: translateX(-18rem) translateY(18rem);
+    font-size: 0.9rem;
+    opacity: 55; }
+  50% {
+    transform: translateX(-20rem) translateY(20rem);
+    font-size: 1rem;
+    opacity: 50; }
+  55% {
+    transform: translateX(-22rem) translateY(22rem);
+    font-size: 1.1rem;
+    opacity: 45; }
+  60% {
+    transform: translateX(-24rem) translateY(24rem);
+    font-size: 1.2rem;
+    opacity: 40; }
+  65% {
+    transform: translateX(-26rem) translateY(26rem);
+    font-size: 1.3rem;
+    opacity: 35; }
+  70% {
+    transform: translateX(-28rem) translateY(28rem);
+    font-size: 1.4rem;
+    opacity: 30; }
+  75% {
+    transform: translateX(-30rem) translateY(30rem);
+    font-size: 1.5rem;
+    opacity: 25; }
+  80% {
+    transform: translateX(-32rem) translateY(32rem);
+    font-size: 1.6rem;
+    opacity: 20; }
+  85% {
+    transform: translateX(-34rem) translateY(34rem);
+    font-size: 1.7rem;
+    opacity: 15; }
+  90% {
+    transform: translateX(-36rem) translateY(36rem);
+    font-size: 1.8rem;
+    opacity: 10; }
+  95% {
+    transform: translateX(-38rem) translateY(38rem);
+    font-size: 1.9rem;
+    opacity: 5; }
+  100% {
+    transform: translateX(-40rem) translateY(40rem);
+    font-size: 2rem;
+    opacity: 0; } }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.music-copy:before {
+  content: "\e601"; }
+
+.music:before {
+  content: "\e8bd"; }
+
+.up:before {
+  content: "\e605"; }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+  section .swiper-container {
+    width: 100%;
+    height: 100%; }
+    section .swiper-container .swiper-wrapper {
+      width: 100%;
+      height: 100%; }
+      section .swiper-container .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        section .swiper-container .swiper-wrapper .swiper-slide div {
+          width: 80%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: absolute; }
+          section .swiper-container .swiper-wrapper .swiper-slide div h2 {
+            font: 900 3.4rem/4.4rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+            color: #fff; }
+          section .swiper-container .swiper-wrapper .swiper-slide div p {
+            font: 600 2rem/2.4rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+        section .swiper-container .swiper-wrapper .swiper-slide .bottom {
+          left: 20%;
+          bottom: 5%; }
+        section .swiper-container .swiper-wrapper .swiper-slide .top {
+          left: 20%;
+          top: 5%; }
+      section .swiper-container .swiper-wrapper .pic1 {
+        background: url(../images/happy1.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic2 {
+        background: url(../images/happy2.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic3 {
+        background: url(../images/happy3.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic4 {
+        background: url(../images/happy4.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic5 {
+        background: url(../images/happy5.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic6 {
+        background: url(../images/happy6.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic7 {
+        background: url(../images/happy7.jpg) no-repeat 0 0;
+        background-size: cover; }
+      section .swiper-container .swiper-wrapper .pic8 {
+        background: url(../images/happy8.jpg) no-repeat 0 0;
+        background-size: cover; }
+  section .up {
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    left: 0;
+    bottom: 2%;
+    z-index: 10;
+    color: #fff;
+    font: 600 2rem/1.4rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    text-align: center;
+    animation: fadeOutUp 1.2s linear 1s infinite; }
+  section .music {
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #484848;
+    font: 100 4rem/3rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    color: #fff;
+    z-index: 10; }
+
+/*# sourceMappingURL=second.css.map */

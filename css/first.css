@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/*鏍峰紡閲嶇疆*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+.clearboth {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+/*椤甸潰瀛椾綋鍝嶅簲*/
+html {
+  font-size: 62.5%;
+  /* 10梅16=62.5% */ }
+
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94% !important;
+    /* 15.04梅16=94% */ } }
+@media only screen and (min-width: 561px) {
+  html {
+    font-size: 109% !important;
+    /* 17.44梅16=109% */ } }
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 125% !important;
+    /* 20梅16=125% */ } }
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  /* IE9*/
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.up:before {
+  content: "\e605"; }
+
+.music:before {
+  content: "\e8bd"; }
+
+@keyframes Round {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+#graduate {
+  width: 100vw;
+  height: 100vh; }
+  #graduate #container {
+    width: 100%;
+    height: 100%; }
+    #graduate #container .swiper-container {
+      width: 100%;
+      height: 90%;
+      position: relative; }
+      #graduate #container .swiper-container .swiper-wrapper {
+        width: 100%;
+        height: 100%; }
+        #graduate #container .swiper-container .swiper-wrapper .pic1 {
+          background: url(../images/pic1.jpg) no-repeat 0 0;
+          background-size: cover; }
+          #graduate #container .swiper-container .swiper-wrapper .pic1 a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 56%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic1 a img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic1 p {
+            color: #fff;
+            font: 400 2rem/3rem "Estrangelo Edessa";
+            text-align: right; }
+        #graduate #container .swiper-container .swiper-wrapper .pic2 {
+          background: #424732; }
+          #graduate #container .swiper-container .swiper-wrapper .pic2 img {
+            width: 100%;
+            height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 {
+            width: 92%;
+            height: 96%;
+            margin: 0 auto;
+            padding-top: 4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 {
+              height: 44%;
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              position: relative; }
+              #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 span:nth-child(1) {
+                width: 75%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; }
+                #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 span:nth-child(1) a {
+                  width: 100%;
+                  height: 64%; }
+                #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 span:nth-child(1) .down {
+                  width: 100%;
+                  height: 34%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between; }
+                  #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 span:nth-child(1) .down a {
+                    width: 48%;
+                    height: 100%; }
+                  #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 span:nth-child(1) .down .content {
+                    width: 48%;
+                    height: 100%;
+                    background: #fff; }
+              #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo1 .title {
+                width: 25%;
+                height: 100%;
+                color: #fff;
+                font: 400 4rem/3rem "Estrangelo Edessa";
+                text-align: center; }
+            #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo2 {
+              width: 100%;
+              height: 44%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic2 .slide2 .photo3 {
+              width: 90%;
+              margin: 0 auto;
+              height: 10%;
+              color: #fff;
+              border-top: 2px solid #fff;
+              font: 600 2.2rem/3rem "Segoe UI Symbol";
+              text-align: center; }
+        #graduate #container .swiper-container .swiper-wrapper .pic3 {
+          background: #424732; }
+          #graduate #container .swiper-container .swiper-wrapper .pic3 a {
+            width: 86%;
+            display: block;
+            height: 28%;
+            padding: 2%;
+            background: #fff;
+            margin: 0 auto; }
+            #graduate #container .swiper-container .swiper-wrapper .pic3 a img {
+              width: 100%;
+              height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic3 a:nth-of-type(1) {
+            transform: translateY(2rem) rotateZ(-13deg); }
+          #graduate #container .swiper-container .swiper-wrapper .pic3 a:nth-of-type(2) {
+            transform: rotateZ(10deg); }
+          #graduate #container .swiper-container .swiper-wrapper .pic3 a:nth-of-type(3) {
+            transform-origin: 50% 0;
+            transform: translateY(-1rem) rotateZ(-10deg); }
+        #graduate #container .swiper-container .swiper-wrapper .pic4 {
+          background: #424732;
+          position: relative; }
+          #graduate #container .swiper-container .swiper-wrapper .pic4 img:nth-of-type(1) {
+            position: absolute;
+            width: 25%;
+            height: 42%;
+            bottom: 4%;
+            left: 4%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(1) {
+            position: absolute;
+            top: 0;
+            left: 4%;
+            border: 1px solid #31465b;
+            width: 60%;
+            height: 30%;
+            transform: translateX(2.5rem) translateY(0rem) rotateZ(30deg);
+            transform-origin: 17% 90%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(1) img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0; }
+          #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(2) {
+            position: absolute;
+            top: 0;
+            left: 4%;
+            border: 1px solid #31465b;
+            width: 60%;
+            height: 30%;
+            transform: translateX(3.5rem) translateY(10rem) rotateZ(40deg);
+            transform-origin: 34% 80%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(2) img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0; }
+          #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(3) {
+            position: absolute;
+            top: 0;
+            left: 4%;
+            border: 1px solid #31465b;
+            width: 60%;
+            height: 30%;
+            transform: translateX(4.5rem) translateY(20rem) rotateZ(50deg);
+            transform-origin: 51% 70%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(3) img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0; }
+          #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(4) {
+            position: absolute;
+            top: 0;
+            left: 4%;
+            border: 1px solid #31465b;
+            width: 60%;
+            height: 30%;
+            transform: translateX(5.5rem) translateY(30rem) rotateZ(60deg);
+            transform-origin: 68% 60%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic4 a:nth-of-type(4) img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0; }
+        #graduate #container .swiper-container .swiper-wrapper .pic5 {
+          background: #424732; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 .title {
+            color: #fff;
+            font: 400 3rem/5rem "Segoe UI Symbol";
+            text-align: center; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) {
+            width: 76%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) a {
+              width: 48%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) a em {
+                width: 46.5%;
+                height: 100%; }
+                #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) a em img {
+                  width: 100%;
+                  height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) {
+            margin: 0 auto;
+            height: 12%;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) a {
+              height: 100%; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(2) a img {
+                width: 100%;
+                height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(3) {
+            width: 89%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(3) a {
+              width: 19.5%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(3) {
+            margin: 0 auto;
+            height: 12%;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(3) a {
+              height: 100%; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(3) a img {
+                width: 100%;
+                height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(4) {
+            width: 77%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(4) a {
+              width: 23.75%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(4) {
+            margin: 0 auto;
+            height: 12%;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(4) a {
+              height: 100%; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(4) a img {
+                width: 100%;
+                height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(5) {
+            width: 65%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(5) a {
+              width: 29.66667%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(5) {
+            margin: 0 auto;
+            height: 12%;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(5) a {
+              height: 100%; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(5) a img {
+                width: 100%;
+                height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(6) {
+            width: 53%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(6) a {
+              width: 36.08696%;
+              display: block;
+              margin: 0 auto; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(6) {
+            margin: 0 auto;
+            height: 12%;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(6) a {
+              height: 100%; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(6) a img {
+                width: 100%;
+                height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(7) {
+            width: 41%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(7) a {
+              width: 77%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(7) {
+            margin: 0 auto;
+            height: 12%;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(7) a {
+              height: 100%; }
+              #graduate #container .swiper-container .swiper-wrapper .pic5 p:nth-of-type(7) a img {
+                width: 100%;
+                height: 100%; }
+        #graduate #container .swiper-container .swiper-wrapper .pic6 {
+          background: #424732; }
+          #graduate #container .swiper-container .swiper-wrapper .pic6 a {
+            width: 50%;
+            display: block;
+            margin: 10% auto;
+            height: 8%; }
+            #graduate #container .swiper-container .swiper-wrapper .pic6 a img {
+              width: 100%;
+              height: 100%; }
+          #graduate #container .swiper-container .swiper-wrapper .pic6 p {
+            margin: 10% auto;
+            width: 80%;
+            text-align: center;
+            color: #c4c4c4;
+            font: 400 2rem/2.4rem "Segoe UI Symbol";
+            font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif; }
+      #graduate #container .swiper-container .page {
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+        #graduate #container .swiper-container .page span {
+          background: #aaff7d; }
+  #graduate #music_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+    top: 1%;
+    right: 1%; }
+    #graduate #music_container #main {
+      margin: 0 auto;
+      width: 30px;
+      height: 30px;
+      background: url(../images/music_off.png) no-repeat 0 0;
+      background-size: cover; }
+    #graduate #music_container .little2 {
+      position: absolute;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      z-index: 10; }
+    #graduate #music_container .little3 {
+      position: absolute;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      z-index: 10; }
+    #graduate #music_container .little4 {
+      position: absolute;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      z-index: 10; }
+    #graduate #music_container div span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url(../images/musict.png) no-repeat 0 0;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  #graduate #up {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    z-index: 20;
+    font: 400 2.2rem/2rem "Segoe UI Symbol";
+    text-align: center;
+    color: #fff;
+    animation: fadeOutUp 2s linear 1s infinite; }
+
+/*# sourceMappingURL=first.css.map */
