@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/friend.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/music.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/friend.js"></script>
+    <title></title>
+</head>
+<body>
+<section id="container" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/year.jpg" alt="year" class="bg">
+            <div class="title">
+                <span class="animate-active"  set-animate="pulse 1s ease 0ms 1">那</span>
+                <span  class="animate-active" set-animate="pulse 1s ease 800ms 1">些</span>
+                <span  class="animate-active" set-animate="pulse 1s ease 1600ms 1">年</span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/two.jpg" alt="year" class="bg">
+            <img src="images/year1.jpg" alt="year" class="year year1 animate-active" set-tran="translateX(21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+            <img src="images/year2.jpg" alt="year" class="year year2  animate-active" set-tran="translateX(-21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="1">
+            <img src="images/year3.jpg" alt="year" class="year year3  animate-active" set-tran="translateX(21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="2">
+            <p class="year year4 animate-active" set-tran="translateX(-21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">我喜欢当年喜欢你的我</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/slideyear.jpg" alt="year" class="bg">
+            <article class="like animate-active"   set-during-time="1600"  set-tran="translateY(-100%)" set-func="ease" set-delay="0">
+                <span>只要够喜欢</span>
+                <span>就没有办不到的等待</span>
+                <span>就可以一直靠信仰爱情</span>
+                <span>坚持下去</span>
+            </article>
+            <img src="images/student.jpg" alt="student" class="student animate-active"   set-tran="rotateZ(0deg)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/bye.jpg" alt="bye" class="bg">
+            <article class="myword animate-active" set-tran="scale(1.2)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+                <span>我会继续努力的</span>
+                <span>这辈子我都会继续努力下去的</span>
+                <span>你就耐心等待</span>
+                <span>我追到你的那一天吧</span>
+                <span>请让我</span>
+                <span>继续喜欢你</span>
+            </article>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="upchange iconfont up"></div>
+
+    <div id="music_container">
+        <audio  id="playmusic"></audio>
+        <div class="little1 animate-ele"><span class="animate-elea"></span></div>
+        <div class="little2 animate-ele"><span class="animate-elea"></span></div>
+        <div class="little3 animate-ele"><span class="animate-elea"></span></div>
+        <div id="main" class="animate-ele">
+        </div>
+    </div>
+</section>
+</body>
+</html>
