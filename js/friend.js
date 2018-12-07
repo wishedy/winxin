@@ -2,24 +2,34 @@
  * Created by Administrator on 2016/7/28.
  */
 $(document).ready(function(){
-    console.log("hello world !")
-    var music = Music("#music_container",{
-        "width":"30px",
-        "height":"30px",
-        "src":"audio/tree.mp3"
-    })
-    var mySwiper = new Swiper('.swiper-container', {
-        speed: 1000,
-        direction: 'vertical',
-        loop: true,
-        pagination: '.swiper-pagination',
-        paginationType: 'bullets',
-        threshold: 20,
-        touchAngle: 40,
-        slideActiveClass: 'swiper-slide-active',
-        onSlideChangeEnd: function (swiper) {
-            animateInit();
-        }
+    var onTouchStart = function(){
+        var music = Music("#music_container",{
+            "width":"30px",
+            "height":"30px",
+            "src":"audio/ido.mp3"
+        });
+    };
+    $(".play-icon").on("click",function(){
+        var isThis = $(this);
+        isThis.fadeOut(2700);
+        startSnow();
+        onTouchStart();
+        setTimeout(function(){
+            $(".snow-container").fadeOut(2500);
+            var mySwiper = new Swiper('.swiper-container', {
+                speed: 1000,
+                direction: 'vertical',
+                loop: true,
+                pagination: '.swiper-pagination',
+                paginationType: 'bullets',
+                threshold: 20,
+                touchAngle: 40,
+                slideActiveClass: 'swiper-slide-active',
+                onSlideChangeEnd: function (swiper) {
+                    animateInit();
+                }
+            });
+        },24000);
     });
     function setTransition(animateObj){
         var animateTime = animateObj.attr('set-during-time');
